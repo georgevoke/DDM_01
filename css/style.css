@@ -1,8 +1,8 @@
 /*
-Project Name: Final Project, Motion Library 
-Client: GA FEWD
+Project Name: Dragontree Digital Media
+Client: Gareth Voke
 Author: George Voke
-Developer @GA in LDN
+Developer @George Voke Limited
 */
 
 
@@ -76,8 +76,9 @@ h2 {
 
 h3 {
 	font-family: 'Roboto Slab', serif;
-	font-size: 1.35rem;
+	font-size: 1.5rem;
 	line-height: 1.35;
+	letter-spacing: -0.0225em;
 	color: #79808E;
 }
 
@@ -102,6 +103,7 @@ h6, h6 a {
 	font-weight: 300;
 	color: rgba(255,255,255,0.75);
 	margin-top: 2rem;
+	transition: color 0.3s;
 }
 
 h6 a:hover {
@@ -114,7 +116,7 @@ p {
 }
 
 .container-2 {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
 
@@ -173,9 +175,118 @@ li {
 	padding-bottom: 0.5rem;
 }
 
+
+
+
+
+
+
+
+
+
 li a {
+	/*position: relative;*/
 	color: rgba(255,255,255,0.85);
+	overflow: hidden;
+	z-index: 10;
 }
+
+/*li a:before {
+	content:'';
+	position: absolute;
+  	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 0.4rem;
+	background-color: #fff;
+	border-bottom: 0.2rem solid #fff;
+	transition: color 0.3s, transform 0.3s;
+	transform: translateX(-100%);
+	z-index: -1;
+}*/
+
+li a:hover {
+	color: rgba(255,255,255,1.0);
+	padding-bottom: 0.4rem;
+	border-bottom: 0.2rem solid #fff;
+}
+
+/*li a:hover:before {
+	transform: translateX(0);
+}*/
+
+
+
+
+
+
+/*li a {
+	position: relative;
+  	overflow: hidden;
+	color: rgba(255,255,255,0.85);
+	transition: color 0.3s, transform 0.3s;
+	overflow: hidden;
+	transition: width 0.3s;
+	z-index: 100;
+}
+
+li a:before {
+	content: '';
+	position: absolute;
+  	overflow: hidden;
+  	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 0.4rem;
+	border-bottom: 0.2rem solid #fff;
+	transition: color 0.3s, transform 0.3s;
+	transform: translateX(-100%)
+}
+
+li a:hover {
+	color: rgba(255,255,255,1.0);
+}
+
+li a:hover:before {
+	color: rgba(255,255,255,1.0);
+	transform: translateX(0);
+}
+*/
+
+
+
+
+
+/*li a {
+	position: relative;
+	color: rgba(255,255,255,0.85);
+	transition: color 0.3s;
+	overflow: hidden;
+	transition: width 0.3s;
+}
+
+li a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 0.4rem;
+	border-bottom: 0.2rem solid #fff;
+}
+
+li a:hover:before {
+	width: 100%;
+}*/
+
+/*li a:hover {
+	padding-bottom: 0.4rem;
+	border-bottom: 0.2rem solid #fff;
+	color: rgba(255,255,255,1.0);
+}*/
 
 a.selected {
 	padding-bottom: 0.4rem;
@@ -183,12 +294,6 @@ a.selected {
 	color: rgba(255,255,255,1.0);
 	font-weight: 500;
 	letter-spacing: 80%;
-}
-
-li a:hover {
-	padding-bottom: 0.4rem;
-	border-bottom: 0.2rem solid #fff;
-	color: rgba(255,255,255,1.0);
 }
 
 /*li a:hover {
@@ -334,6 +439,7 @@ li a:hover:before {
 
 
 .hero {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -341,15 +447,10 @@ li a:hover:before {
 	width: 100%;
 	height: 80vh;
 	min-height: 60rem;
-	/*padding: 15rem 1.5rem;*/
 	text-align: center;
 	min-height: 40rem;
 }
 
-/*.off {
-	display: none;
-	visibility: hidden;
-}*/
 
 .video {
 	display: none;
@@ -386,9 +487,6 @@ li a:hover:before {
 }
 
 a.close {
-	/*position: relative;*/
-	/*top: 0;
-	left: 0;*/
 	font-size: 1.125rem;
 	font-weight: 300;
 	color: rgba(255,255,255,0.85);
@@ -396,19 +494,18 @@ a.close {
 }
 
 a.close:hover {
-	/*text-decoration: underline;*/
-	/*font-weight: 400;*/
 	color: #1F7EED;
-	/*border-bottom: 0.1rem solid #fff;*/
 }
 
 .close i {
 	font-size: 1.5rem;
 }
 
-iframe {
+.video iframe {
 	margin: 0.5rem 0;
 }
+
+
 
 
 /* HOME ******************/
@@ -418,20 +515,47 @@ iframe {
     background-size: cover;
 }
 
-/*.hero .container-2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}*/
+
+
 
 /* CONTACT ******************/
 
+header.contact_header {
+	background-color: #010D23;
+}
 
+.contact_title iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*height: 100%;
+	width: 100%;*/
+    background-size: cover;
+    /*opacity: 0.9;*/
+    z-index: -1;
+}
+
+.contact_title h1, .contact_title h2 {
+	color: #010D23;
+	display: inline-block;
+	background-color: #fff;
+	/*transform: translateX(-1.25rem);*/
+}
+
+.contact_title h1 {
+	padding: 1rem 1.25rem;
+}
+
+.contact_title h2 {
+	margin-top: -1rem;
+	padding: 0 1.25rem 1rem;
+}
 
 
 /******************************************************
 /* CTAS
 /******************************************************/
+
 
 .visible {
 	display: none;
@@ -444,7 +568,7 @@ iframe {
 	border-radius: 50%;
 }
 
-.button a{
+.button a {
 	display: inline-block;
 	font-size: 1rem;
 	padding: 3rem;
@@ -505,7 +629,7 @@ section .button {
 
 section .button a {
 	display: inline-block;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 	font-weight: 300;
 	width: 100%;
 	margin: 0.25rem;
@@ -583,112 +707,101 @@ img.pictogram {
 	border-right: none;
 }
 
-/*.thumbs a {
-	padding: 1.25rem;
-}*/
-
 .portfolio .thumb {
+	position: relative;
 	display: inline;
 	float: left;
 	width: 100%;
 	text-align: left;
-	/*border-right: 0.125rem solid #F1F3F8;*/
 	background-color: #E0E3E9;
-	/*border-bottom: 0.125rem solid #F1F3F8;*/
 }
 
-/*.portfolio .thumb:last-child {
-	border-bottom: none;
-}*/
-
-
-/*.portfolio h5, .portfolio p {
-	font-size: 1rem;
-	font-weight: 300;
-	margin: 0 1.25rem 1.25rem;
-}*/
-
 .portfolio h5 {
-	/*font-size: 1rem;*/
-	margin: 8rem 1.25rem 0.5rem;
+	margin: 0.5rem 1.25rem;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
 .portfolio p {
-	/*font-size: 1rem;*/
+	color: rgba(255,255,255,0.9);
 	font-weight: 300;
 	margin: 0 1.25rem 1.5rem;
 }
 
+.portfolio i {
+	font-size: 1.5rem;
+	color: /*#1F7EED*/ rgba(255,255,255,0.8);
+	margin: 8rem 1.25rem 0.5rem;
+}
 
-
-
-/*.portfolio .thumb:nth-child(1):before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
+.thumb a {
+	display: inline-block;
+	position: relative;
 	width: 100%;
 	height: 100%;
-    background: url("../assets/thumb-1.png") no-repeat bottom center;
-    background-size: cover;
-    transition: all 2s;
+	background-color: rgba(1,13,35,0.0);
+    transition: all 0.5s;
 }
 
-.portfolio .thumb:nth-child(1) {
-	position: relative;
-    background: linear-gradient(rgba(1,13,35,0.35), rgba(1,13,35,0.9));
-    background-size: cover;
-    z-index: 1;
-    transition: all 2s;
+.thumb a:hover {
+	background-color: rgba(1,13,35,0.4);
 }
 
-.portfolio .thumb:nth-child(1):hover {
-	position: relative;
-    background: linear-gradient(rgba(1,13,35,0.0), rgba(1,13,35,0.35));
-    background-size: cover;
-    z-index: 1;
-    transition: all 2s;
-}*/
 
-
-
-
-.portfolio .thumb:nth-child(1) {
-    background: linear-gradient(rgba(1,13,35,0.35), rgba(1,13,35,0.9)), url("../assets/thumb-1.png") no-repeat bottom center;
+.promotional {
+	background: linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,9.0)), url("../assets/thumb-1.png") no-repeat bottom center;
     background-size: cover;
 }
 
-.portfolio .thumb:nth-child(2) {
-    background: linear-gradient(rgba(1,13,35,0.35), rgba(1,13,35,0.9)), url("../assets/thumb-2.png") no-repeat bottom center;
+.corporate {
+	background: linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,9.0)), url("../assets/thumb-2.png") no-repeat bottom center;
     background-size: cover;
 }
 
-.portfolio .thumb:nth-child(3) {
-    background: linear-gradient(rgba(1,13,35,0.35), rgba(1,13,35,0.9)), url("../assets/thumb-3.png") no-repeat bottom center;
+.wedding {
+	background: linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,9.0)), url("../assets/thumb-3.png") no-repeat bottom center;
     background-size: cover;
 }
 
-.portfolio .thumb:nth-child(1):hover {
-    background: linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,0.35)), url("../assets/thumb-1.png") no-repeat bottom center;
-    background-size: cover;
+
+
+
+.remove {
+	display: block;
+	visibility: visible;
 }
 
-.portfolio .thumb:nth-child(2):hover {
-    background: linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,0.35)), url("../assets/thumb-2.png") no-repeat bottom center;
-    background-size: cover;
-}
-
-.portfolio .thumb:nth-child(3):hover {
-    background: linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,0.35)), url("../assets/thumb-3.png") no-repeat bottom center;
-    background-size: cover;
+.add {
+	display: none;
+	visibility: hidden;
 }
 
 
 /******************************************************************************************************************************
 /* MEDIA QUERIES
-/*************************************************************  600px -> 768px  ***********************************************/
+/*************************************************************  430px ->  ***********************************************/
+
+
+@media (min-width: 430px) {
+
+.remove {
+	display: none;
+	visibility: hidden;
+}
+
+.add {
+	display: block;
+	visibility: visible; 
+}
+
+}
+
+
+
+
+/******************************************************************************************************************************
+/* MEDIA QUERIES
+/*************************************************************  <- 640px  ***********************************************/
 
 @media (max-height: 640px) {
 
@@ -715,17 +828,24 @@ h1, h2 {
 	font-size: 2.25rem;
 }
 
-/*h3 {
-	font-size: 1.5rem;
+h3 {
+	font-size: 1.4rem;
+	line-height: 1.25;
+	letter-spacing: /*0.015em*/ 0.025em;
+	color: #79808E;
 }
-*/
+
+.portfolio h5, .portfolio p {
+	font-size: 1rem;
+}
 
 .portfolio h5 {
-	font-size: 1rem;
+	margin-top: 0.5rem;
 }
 
-.portfolio p {
-	font-size: 1rem;
+.portfolio i {
+	font-size: 1.25rem;
+	margin: 4rem 1.25rem 0.25rem;
 }
 
 nav {
@@ -755,6 +875,10 @@ nav {
 
 section .button {
 	display: inline-block;
+}
+
+section .button a {
+	font-size: 1.125rem;
 }
 
 .scroll {
@@ -898,6 +1022,10 @@ footer h6:last-child {
 	border-radius: 0.25rem;
 }
 
+/*.contact_title .button {
+	margin-top: 0.75rem;
+}*/
+
 .button a {
 	font-size: 1.125rem;
 	margin: 0.25rem;
@@ -986,6 +1114,14 @@ p {
 
 .video {
 	text-align: right;
+}
+
+.portfolio h5 {
+	margin-top: 0.5rem;
+}
+
+.portfolio i {
+	margin-top: 6rem;
 }
 
 

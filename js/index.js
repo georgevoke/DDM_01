@@ -221,6 +221,43 @@ $('#close').on('click', function(e) {
 
 
 
+/****************************************************
+/* CLOSE SHOWREEL
+/****************************************************/
+
+// $('#close').on('click', function(e) {
+//   var $this = $(this);
+//   var $frame = $this.find('iframe');
+//   $frame.attr('src', $frame.attr('src'));
+// });
+
+$('#close').on('click', function(e) {
+  // alert("I am an alert box!");
+  // $('frame').attr('src');
+  var $frame = $('iframe');
+  $frame.attr('src', $frame.attr('src'));
+});
+
+
+// $('#close').on('click', function(e) {
+//   // alert("I am an alert box!");
+//   // $('frame').attr('src');
+//   var $this = $(this);
+//   var $frame = $this.find('iframe');
+
+//   $frame.attr('src', $frame.attr('src'));
+// });
+
+// $('#close').on('click', function(e) {
+//   // alert("I am an alert box!");
+//   // $('frame').attr('src');
+//   // var $frame = $('iframe');
+
+//   var $frame = $this.find('iframe');
+
+//   $frame.attr('src', $frame.attr('src'));
+// });
+
 
 
 
