@@ -90,9 +90,9 @@ var waypoint = new Waypoint({
     // Do stuff
 
     // Show main._home
-    $('main.home').css('opacity', '1.0');
-    $('main.home').css('z-index', '2');
-    $('main.home').css('transform', 'translateY(-3rem)');
+    $('main').css('opacity', '1.0');
+    $('main').css('z-index', '2');
+    $('main').css('transform', 'translateY(-3rem)');
     }
 
   }
@@ -111,9 +111,9 @@ var waypoint = new Waypoint({
     // Do stuff
 
     // Hide main._home
-    $('main.home').css('opacity', '0.0');
-    $('main.home').css('z-index', '-2');
-    $('main.home').css('transform', 'translateY(2rem)');
+    $('main').css('opacity', '0.0');
+    $('main').css('z-index', '-2');
+    $('main').css('transform', 'translateY(2rem)');
     }
 
   }

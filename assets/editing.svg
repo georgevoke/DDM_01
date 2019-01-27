@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100"><defs><style>.cls-1{fill:#fff;opacity:0;}.cls-2{opacity:0.5;}.cls-3{fill:#4d5567;}.cls-4{fill:#137bf0;opacity:0.6;}.cls-5{fill:#434b5d;}</style></defs><title>editing</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="120" height="100"/><g class="cls-2"><path class="cls-3" d="M42,79.83,11.76,49.55,42,19.27,72.32,49.55Z"/></g><path class="cls-4" d="M62,79.83,31.76,49.55,62,19.27,92.32,49.55Z"/><path class="cls-5" d="M109.06,33.06l-2.12-2.12L90.32,47.56,64.16,21.39,80.78,4.78,78.66,2.66,62,19.27,45.42,2.66,43.3,4.78,59.92,21.39,33.75,47.56,17.14,30.94,15,33.06,31.63,49.68,15,66.3l2.12,2.12L33.75,51.8,59.92,78,43.3,94.58l2.12,2.12L62,80.08,78.66,96.7l2.12-2.12L64.16,78,90.32,51.8l16.62,16.62,2.12-2.12L92.44,49.68ZM62,75.84,35.88,49.68,62,23.52,88.2,49.68Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 100" style="enable-background:new 0 0 120 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;fill-opacity:0;}
+	.st1{opacity:0.5;}
+	.st2{fill:#434B59;}
+	.st3{opacity:0.8;fill:#1F7EED;enable-background:new    ;}
+	.st4{fill:#3A404C;}
+</style>
+<title>editing</title>
+<g id="Layer_2">
+	<g id="Layer_1-2">
+		<rect class="st0" width="120" height="100"/>
+		<g class="st1">
+			<path class="st2" d="M42,79.8L11.8,49.5L42,19.3l30.3,30.3L42,79.8z"/>
+		</g>
+		<path class="st3" d="M62,79.8L31.8,49.5L62,19.3l30.3,30.3L62,79.8z"/>
+		<path class="st4" d="M109.1,33.1l-2.1-2.1L90.3,47.6L64.2,21.4L80.8,4.8l-2.1-2.1L62,19.3L45.4,2.7l-2.1,2.1l16.6,16.6L33.8,47.6
+			L17.1,30.9L15,33.1l16.6,16.6L15,66.3l2.1,2.1l16.6-16.6L59.9,78L43.3,94.6l2.1,2.1L62,80.1l16.7,16.6l2.1-2.1L64.2,78l26.2-26.2
+			l16.6,16.6l2.1-2.1L92.4,49.7L109.1,33.1z M62,75.8L35.9,49.7L62,23.5l26.2,26.2L62,75.8z"/>
+	</g>
+</g>
+</svg>
