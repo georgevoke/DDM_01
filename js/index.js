@@ -37,16 +37,16 @@ $(window).resize(function(){
 /****************************************************/
 
 
-window.onload = function() {
-    var myOptions = {
-        center: new google.maps.LatLng(50.721802,-3.833620),
-        zoom: 10.2,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: false
-    };
+// window.onload = function() {
+//     var myOptions = {
+//         center: new google.maps.LatLng(50.721802,-3.833620),
+//         zoom: 10.2,
+//         mapTypeId: google.maps.MapTypeId.ROADMAP,
+//         disableDefaultUI: false
+//     };
 
-    var map = new google.maps.Map(document.getElementById("map"), myOptions);
-}
+//     var map = new google.maps.Map(document.getElementById("map"), myOptions);
+// }
 
 
 
@@ -112,7 +112,7 @@ var waypoint = new Waypoint({
 
     // Hide main._home
     $('main').css('opacity', '0.0');
-    $('main').css('z-index', '-2');
+    $('main').css('z-index', '0');
     $('main').css('transform', 'translateY(2rem)');
     }
 
