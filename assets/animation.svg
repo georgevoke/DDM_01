@@ -4,23 +4,30 @@
 	 viewBox="0 0 120 100" style="enable-background:new 0 0 120 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;fill-opacity:0;}
-	.st1{opacity:0.5;}
-	.st2{fill:#434B59;}
-	.st3{opacity:0.8;fill:#1F7EED;enable-background:new    ;}
-	.st4{fill:#3A404C;}
+	.st1{opacity:0.5;fill:#434B59;}
+	.st2{opacity:0.8;fill:#1F7EED;enable-background:new    ;}
+	.st3{fill:none;stroke:#3A404C;stroke-width:3;stroke-miterlimit:10;enable-background:new    ;}
+	.st4{fill:none;stroke:#3A404C;stroke-width:3;stroke-miterlimit:10;stroke-dasharray:4,3;enable-background:new    ;}
 </style>
 <title>animation</title>
 <g id="Layer_2">
 	<g id="Layer_1-2">
 		<rect class="st0" width="120" height="100"/>
-		<g class="st1">
-			<path class="st2" d="M75.2,36.8c0,14.4-11.6,26-26,26s-26-11.6-26-26s11.6-26,26-26S75.2,22.5,75.2,36.8z"/>
-		</g>
-		<path class="st3" d="M74.2,64.8c0,16-13,29-29,29s-29-13-29-29s13-29,29-29l0,0C61.2,35.8,74.2,48.8,74.2,64.8z"/>
-		<path class="st4" d="M75.2,6.8c-16,0-29,13-29,29l0,0l0,0h-1c-16,0-29,13-29,29s13,29,29,29s29-13,29-29l0,0h1c16,0,29-13,29-29
-			S91.2,6.8,75.2,6.8z M71.2,64.8c0,14.4-11.6,26-26,26s-26-11.6-26-26s11.6-26,26-26h1.2c1.4,13.3,11.6,23.9,24.8,25.7
-			C71.1,64.6,71.2,64.7,71.2,64.8z M49.4,39.2c11.3,1.9,20.1,10.9,21.5,22.3C59.6,59.6,50.9,50.5,49.4,39.2z M75.2,61.8l-1.2,0
-			C72.6,48.6,62.3,38,49.2,36.1c0-0.1,0-0.2,0-0.3c0-14.4,11.6-26,26-26s26,11.6,26,26S89.5,61.8,75.2,61.8L75.2,61.8z"/>
 	</g>
 </g>
+<circle class="st1" cx="50.4" cy="37" r="33.3"/>
+<circle class="st2" cx="75.4" cy="37" r="33.3"/>
+<circle class="st3" cx="75.4" cy="37" r="33.3"/>
+<circle class="st3" cx="38.9" cy="66.2" r="29.1"/>
+<path class="st4" d="M38.9,66.3c7.9-13.9,20.8-24.6,36.3-29.6"/>
+<g id="Layer_2_1_">
+	<g id="Layer_1-2_1_">
+		<rect x="366.2" class="st0" width="120" height="100"/>
+	</g>
+</g>
+<circle class="st1" cx="416.6" cy="37" r="33.3"/>
+<circle class="st2" cx="441.6" cy="37" r="33.3"/>
+<circle class="st3" cx="441.6" cy="37" r="33.3"/>
+<circle class="st3" cx="405.1" cy="66.2" r="29.1"/>
+<circle class="st3" cx="461.2" cy="98" r="64.3"/>
 </svg>

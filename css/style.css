@@ -635,7 +635,7 @@ main.home {
 section {
 	width: 100%;
 	padding: 1.875rem 0 2.5rem;
-	margin-bottom: 0.9375rem;
+	margin-bottom: 2rem;
 	text-align: center;
 	background-color: #F1F3F8;
 	border-radius: 0.075rem;
@@ -757,10 +757,8 @@ img.pictogram {
 /* WORK + SERVICES ******************/
 
 section.project, section.service {
-	display: flex;
 	min-height: 20rem;
 	padding: 0;
-	/*min-height: 20rem;*/
 }
 
 section.service {
@@ -768,17 +766,19 @@ section.service {
 }
 
 .project-video, .service-icon {
-	float: left;
-	width: 50%;
-	/*min-height: 20rem;*/
-	border-radius: 0.075rem 0 0 0.075rem;
-	background-color: /*#4D5566*/ #ededed;
-	border-right: 0.5rem solid #1F7EED;
+	width: 100%;
+	height: 15rem;
+	border-radius: 0.075rem 0.075rem 0 0;
+	background-color: #ededed;
+	border-bottom: 0.5rem solid /*#1F7EED #4f98f2*/ #3985e0;
 }
 
 .service-icon {
-	width: 33.3333333333%;
-	padding: 2.75rem;
+	width: 100%;
+	height: 10rem;
+	/*width: 33.3333333333%;*/
+	/*padding: 2.75rem;*/
+	padding: 1.5rem;
 }
 
 .project-one .project-video {
@@ -802,8 +802,8 @@ section.service {
 }
 
 .project-content, .service-content {
-	float: left;
-	width: 50%;
+	/*float: left;*/
+	width: 100%; /*change*/
 	height: 100%;
 	text-align: left;
 	padding: 1.875rem;
@@ -811,8 +811,7 @@ section.service {
 }
 
 .service-content {
-	width: 66.6666666666%;
-	padding-right: 5rem;
+	width: 100%;
 }
 
 .title {
@@ -825,13 +824,18 @@ section.service {
 	margin-bottom: 0.75rem;
 }
 
-.project-content h5, .service-content h5 {
+.project-content h5, .service-content h5, .package-content h5 {
+	margin: 0.75rem 0 0.5rem;
+	font-weight: 400;
+}
+
+.project-content, .service-content h5, .package-content h5 {
 	margin: 0.75rem 0 0.5rem;
 	font-weight: 400;
 }
 
 .body {
-	font-size: 0.8rem;
+	font-size: 1rem;
 	color: #6E747F;
 	line-height: 1.35;
 }
@@ -841,6 +845,28 @@ section.service {
 	background: url("../assets/filming.svg") no-repeat bottom center;
     background-size: cover;
 }*/
+
+
+/* PRICING ******************/
+
+/*.package-content {
+	background-color: #fff;
+	color: #000;
+}
+
+.pricing .package-content {
+	text-align: left;
+	background-color: #F1F3F8;
+}
+
+.pricing .package-content p.title {
+	margin-top: 1rem;
+}*/
+
+/*.pricing .thumbs,*/ /*.contact .thumbs {
+	margin-top: 0;
+}*/
+
 
 
 
@@ -978,7 +1004,6 @@ section .button a:hover {
 
 li {
 	font-size: 1.25rem;
-	margin-bottom: 2.25rem;
 	padding-bottom: 0.5rem;
 }
 
@@ -1061,6 +1086,10 @@ nav {
 	background-size: cover;
 }
 
+section {
+	margin-bottom: 0.9375rem;
+}
+
 section .button {
 	display: inline-block;
 }
@@ -1099,7 +1128,7 @@ section .button a {
 	float: left;
 	width: 33.3333333%;
 	/*border-right: 0.125rem solid #F1F3F8;*/
-	background-color: #E0E3E9;
+	/*background-color: #E0E3E9;*/
 }
 
 .services .thumb:nth-child(1), .services .thumb:nth-child(2) {
@@ -1116,6 +1145,122 @@ section .button a {
 	border-right: none;
 
 }*/
+
+
+
+/* WORK + SERVICES ******************/
+
+/*section.project, section.service {
+	display: flex;
+	min-height: 20rem;
+	padding: 0;
+}
+
+section.service {
+	min-height: 10rem;
+}
+
+.project-video, .service-icon {
+	float: left;
+	width: 50%;
+	border-radius: 0.075rem 0 0 0.075rem;
+	background-color: #ededed;
+	border-right: 0.5rem solid #1F7EED;
+}
+
+.service-icon {
+	width: 33.3333333333%;
+	padding: 2.75rem;
+}
+
+.project-one .project-video {
+	background: linear-gradient(rgba(1,13,35,0.2), rgba(1,13,35,0.6)), url("../assets/work.jpg") no-repeat bottom center;
+    background-size: cover;
+}
+
+.project-two .project-video {
+	background: linear-gradient(rgba(1,13,35,0.2), rgba(1,13,35,0.6)), url("../assets/thumb-1.png") no-repeat bottom center;
+    background-size: cover;
+}
+
+.project-three .project-video {
+	background: linear-gradient(rgba(1,13,35,0.2), rgba(1,13,35,0.6)), url("../assets/9.png") no-repeat bottom center;
+    background-size: cover;
+}
+
+.project-four .project-video {
+	background: linear-gradient(rgba(1,13,35,0.4), rgba(1,13,35,0.8)), url("../assets/thumb-3.png") no-repeat bottom center;
+    background-size: cover;
+}
+
+.project-content, .service-content {
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: left;
+	padding: 1.875rem;
+	overflow: scroll;
+}
+
+.service-content {
+	width: 66.6666666666%;
+	padding-right: 5rem;
+}
+
+.title {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #011230;
+}
+
+.service-content .title {
+	margin-bottom: 0.75rem;
+}
+
+.project-content h5, .service-content h5 {
+	margin: 0.75rem 0 0.5rem;
+	font-weight: 400;
+}
+
+.body {
+	font-size: 0.8rem;
+	color: #6E747F;
+	line-height: 1.35;
+}*/
+
+
+
+section.project, section.service {
+	display: flex;
+}
+
+.project-video, .service-icon {
+	float: left;
+	width: 50%;
+	height: auto;
+	border-radius: 0.075rem 0 0 0.075rem;
+	border-right: 0.45rem solid /*#1F7EED #4f98f2*/ #3985e0;
+	border-bottom: none;
+}
+
+.project-content, .service-content {
+	float: left;
+	width: 50%;
+}
+
+.service-icon {
+	width: 33.3333333333%;
+	height: auto;
+	padding: 2.75rem;
+}
+
+.service-content {
+	width: 66.6666666666%;
+}
+
+
+
+
 
 
 
@@ -1434,6 +1579,15 @@ p {
 
 .portfolio i {
 	margin-top: 6rem;
+}
+
+.service-content {
+	padding-right: 5rem;
+}
+
+
+main.contact .thumbs {
+	margin-top: 0;
 }
 
 
