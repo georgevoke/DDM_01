@@ -1298,6 +1298,7 @@ li a:hover:before {
 	height: 85vh;
 	text-align: left;
 	min-height: 30rem;
+	/*width: 100%;*/
 }
 
 /*section.project {
