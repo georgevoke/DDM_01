@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:700|Rubik:300,400,500|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:700|Rubik:300,400,500|Roboto+Slab:300" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
 </head>
@@ -18,34 +18,23 @@
 
 <body>
 
-  <div class="video">
-
-    <a href="#" id="close" class="close"><p>Close<i class="far fa-times-circle"></i></p></a>
-   
-    <iframe class="video-showreel" src="https://player.vimeo.com/video/268802654?byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-  </div>
-
   <header class="clearfix">
 
     <nav class="container-1" role="navigation">
-
-      <!-- <span id="waypoint" class="waypoint"></span> -->
         
         <div class="logo"></div>
 
         <div class="menu-toggle">
-          <input id="checkBox" type="checkbox" />
+          <input id="checkBox" type="checkbox"/>
           <span></span>
           <span></span>
           <span></span>
 
                 <ul id="menuList" class="menu">
-                    <li><a href="./index.html">Dragontree</li></a>
+                    <li><a href="./index.html">Dragontree</a></li>
                     <li><a href="#" class="selected">Services</a></li>
                     <li><a href="./work.html">Work</a></li>
-                    <li><a href="./pricing.html">Pricing</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a class="primary" href="./contact.html">Contact</a></li>
                 </ul>
         </div>
 
@@ -53,24 +42,21 @@
 
   </header>
 
+
   <div class="hero services_title">
 
-    <div class="container-2">    
+    <div class="container-2">
+
         <h1>Commercial Film & Video Production</h1>
         <h2>With free advice and consultation</h2>
 
-        <div class="play">
-          <span class='button'>
-              <a href="#" id="play-showreel" alt="Play showreel"><span class="visible">Showreel</span><i class="fas fa-play"></i></a>  
+        <div class="play-showreel">
+          <span class='button-action-small'>
+            <a href="#" id="play-showreel" alt="Watch showreel"><span class="visible-1">Watch showreel</span><i class="fas fa-play"></i></a>
           </span>
-        </div>
-        <!-- <div class="scroll">
-          <span class='button'>
-              <a href="#anchor-point" class="js-section-scroll" alt="Scroll down"><i class="fas fa-arrow-down"></i></a>  
-          </span>
-          <h5>More</h5>
-        </div> -->
-        
+          <div class="visible-2">Showreel</div>
+        </div>  
+
     </div>
 
   </div>
@@ -79,90 +65,84 @@
 
   <main class="services">
 
-    <div class="container-2">
+    <div class="container-3">
 
 
       <section id="main">
-    
-        <!-- <span id="anchor-point" class="anchor-point"></span> -->
 
-        <h3 class="remove">We'll consider projects of all sizes,</br> from personal events and promotional</br> material, to sales, training, marketing</br> and any other corporate requirements.</h3>
-
-        <h3 class="add">We'll consider projects of all sizes, from personal events</br> and promotional material, to sales, training, marketing</br> and any other corporate requirements.</h3>
+        <h3>We welcome you to see us as an extension of your own team</h3>
 
       </section>
 
 
+      <section class="service">
+            
+            <div class="thumb">
+              <img class="pictogram" src="assets/planning.svg">
+            </div>
 
-      <section class="service service-one">
-        <img class="service-icon" src="assets/planning.svg">
-        <!-- <div class="service-icon"></div> -->
-        <div class="service-content">
-          <p class="title">Planning & Direction</p>
-          <!-- <h5>Project type</h5> -->
-          <p class="body">
-            Lorem ipsum dolor sit amet, ei qui homero animal admodum, nam illud volutpat et. At est graeci ullamcorper, ius wisi essent lobortis at. Vis ne mucius accumsan, est omnesque voluptua dignissim et. Vel ut illum laudem splendide, an pro viderer adversarium liberavisse.</br>
-            </br>
-            An cum inani apeirian reformidans, eu congue blandit mel, ei duo eros saepe officiis. At eam aperiri argumentum, mei ut quod illum officiis.
-          </p>
-        </div>
-      </section>
+            <div class="description">
+              <h4 class="label">Planning & Direction</h4>
+              <h6>We work with you every step of the way to bring your vision to life: from  ideas generation, scriptwriting and storyboard creation, to selecting video  styles, professional presenters, and project and set management.</h6>
+            </div>
 
-      <section class="service service-two">
-        <img class="service-icon" src="assets/filming.svg">
-        <!-- <div class="service-icon"></div> -->
-        <div class="service-content">
-          <p class="title">Film & Camera Operation</p>
-          <!-- <h5>Project type</h5> -->
-          <p class="body">
-            Lorem ipsum dolor sit amet, ei qui homero animal admodum, nam illud volutpat et. At est graeci ullamcorper, ius wisi essent lobortis at. Vis ne mucius accumsan, est omnesque voluptua dignissim et. Vel ut illum laudem splendide, an pro viderer adversarium liberavisse.</br>
-            </br>
-            An cum inani apeirian reformidans, eu congue blandit mel, ei duo eros saepe officiis. At eam aperiri argumentum, mei ut quod illum officiis.
-          </p>
-        </div>
-      </section>
+       </section>
 
-      <section class="service service-three">
-        <img class="service-icon" src="assets/editing.svg">
-        <!-- <div class="service-icon"></div> -->
-        <div class="service-content">
-          <p class="title">Editing & Colour Grading</p>
-          <!-- <h5>Project type</h5> -->
-          <p class="body">
-            Lorem ipsum dolor sit amet, ei qui homero animal admodum, nam illud volutpat et. At est graeci ullamcorper, ius wisi essent lobortis at. Vis ne mucius accumsan, est omnesque voluptua dignissim et. Vel ut illum laudem splendide, an pro viderer adversarium liberavisse.</br>
-            </br>
-            An cum inani apeirian reformidans, eu congue blandit mel, ei duo eros saepe officiis. At eam aperiri argumentum, mei ut quod illum officiis.
-          </p>
-        </div>
-      </section>
 
-      <section class="service service-four">
-        <img class="service-icon" src="assets/aerial.svg">
-        <!-- <div class="service-icon"></div> -->
-        <div class="service-content">
-          <p class="title">Aerial Images & Drone Services</p>
-          <!-- <h5>Project type</h5> -->
-          <p class="body">
-            Lorem ipsum dolor sit amet, ei qui homero animal admodum, nam illud volutpat et. At est graeci ullamcorper, ius wisi essent lobortis at. Vis ne mucius accumsan, est omnesque voluptua dignissim et. Vel ut illum laudem splendide, an pro viderer adversarium liberavisse.</br>
-            </br>
-            An cum inani apeirian reformidans, eu congue blandit mel, ei duo eros saepe officiis. At eam aperiri argumentum, mei ut quod illum officiis.
-          </p>
-        </div>
-      </section>
+       <section class="service">
+            
+            <div class="thumb">
+              <img class="pictogram" src="assets/filming.svg">
+            </div>
 
-      <section class="service service-five">
-        <img class="service-icon" src="assets/animation.svg">
-        <!-- <div class="service-icon"></div> -->
-        <div class="service-content">
-          <p class="title">Animation & 3D Rendering</p>
-          <!-- <h5>Project type</h5> -->
-          <p class="body">
-            Lorem ipsum dolor sit amet, ei qui homero animal admodum, nam illud volutpat et. At est graeci ullamcorper, ius wisi essent lobortis at. Vis ne mucius accumsan, est omnesque voluptua dignissim et. Vel ut illum laudem splendide, an pro viderer adversarium liberavisse.</br>
-            </br>
-            An cum inani apeirian reformidans, eu congue blandit mel, ei duo eros saepe officiis. At eam aperiri argumentum, mei ut quod illum officiis.
-          </p>
-        </div>
-      </section>
+            <div class="description">
+              <h4 class="label">Film & Camera Operation</h4>
+              <h6>We only use the very best equipment and techniques to achieve the highest quality for our partners. [List some examples. Camera types? Sound equipment? Dolly? Booms? Whatever sounds good].</h6>
+            </div>
+
+       </section>
+
+
+       <section class="service">
+            
+            <div class="thumb">
+              <img class="pictogram" src="assets/editing.svg">
+            </div>
+
+            <div class="description">
+              <h4 class="label">Editing & Colour Grading</h4>
+              <h6>As a part of our full-service approach and commitment to the highest standards, you can expect visual precision, thoughtful editing and ruthless attention to detail.</h6>
+            </div>
+
+       </section>
+
+
+       <section class="service">
+            
+            <div class="thumb">
+              <img class="pictogram" src="assets/aerial.svg">
+            </div>
+
+            <div class="description">
+              <h4 class="label">Aerial Images & Drone Services</h4>
+              <h6>As a part of our full-service approach and commitment to the highest standards, you can expect visual precision, thoughtful editing and ruthless attention to detail.</h6>
+            </div>
+
+       </section>
+
+
+       <section class="service">
+            
+            <div class="thumb">
+              <img class="pictogram" src="assets/animation.svg">
+            </div>
+
+            <div class="description">
+              <h4 class="label">Animation & 3D Rendering</h4>
+              <h6>Animation can be an excellent way to explain complex or visually unexciting concepts, so whether it’s a feature to your main body of work, or it forms the basis of your video, we’ve got you covered.</h6>
+            </div>
+
+       </section>
 
 
     </div>
@@ -170,13 +150,17 @@
   </main>
 
 
+
   <footer>
+
     <div class="container-1">
-      <h6><i class="fas fa-envelope"></i><a href="#">enquires@dragontree.co.uk</a></h6>
-      <h6><i class="fas fa-phone"></i><a href="#">+44 (0) 1626 444 444</a></h6>
-      <h6>© 2019 Dragontree Digital Media</h6>
+      <p><i class="fas fa-envelope"></i><a href="#">gareth.voke@dragontree.co.uk</a></p>
+      <p><i class="fas fa-phone"></i><a href="#">+44 (0) 7584 165 446</a></p>
+      <p>© 2020 Dragontree Digital Media</p>
     </div>
+
   </footer>
+
 
 
   

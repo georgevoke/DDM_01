@@ -4,24 +4,18 @@
 	 viewBox="0 0 120 100" style="enable-background:new 0 0 120 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;fill-opacity:0;}
-	.st1{opacity:0.5;fill:#434B59;enable-background:new    ;}
-	.st2{opacity:0.8;fill:#1F7EED;enable-background:new    ;}
-	.st3{fill:#3A404C;}
+	.st1{opacity:0.3;fill:#434B59;enable-background:new    ;}
+	.st2{opacity:0.7;fill:#1F7EED;enable-background:new    ;}
+	.st3{fill:none;stroke:#3A404C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <title>filming</title>
-<g id="Layer_2">
-	<g id="Layer_1-2">
-		<rect class="st0" width="120" height="100"/>
-		<circle class="st1" cx="43.1" cy="50.5" r="42"/>
-		<path class="st2" d="M103.7,34c9.1,21.3-0.8,46-22.1,55.2s-46-0.8-55.2-22.1c-4.5-10.5-4.5-22.5-0.1-33L103.7,34z"/>
-		<path class="st3" d="M110,50.5c0-24.9-20.2-45-45-45c-24.8,0.1-45,20.2-45,45c0,24.9,20.2,45,45,45c24.8,0.1,45-19.9,45-44.7
-			C110,50.6,110,50.6,110,50.5z M65.1,92.5c-23.2,0-42-18.8-42-42s18.8-42,42-42s42,18.8,42,42S88.3,92.5,65.1,92.5z"/>
-		<g>
-			<path class="st3" d="M13,31h105c0.3,0,0.5,0.2,0.5,0.5v2c0,0.3-0.2,0.5-0.5,0.5H13c-0.3,0-0.5-0.2-0.5-0.5v-2
-				C12.5,31.2,12.7,31,13,31z"/>
-			<path class="st3" d="M13,67h105c0.3,0,0.5,0.2,0.5,0.5v2c0,0.3-0.2,0.5-0.5,0.5H13c-0.3,0-0.5-0.2-0.5-0.5v-2
-				C12.5,67.3,12.7,67,13,67z"/>
-		</g>
-	</g>
+<rect class="st0" width="120" height="100"/>
+<circle class="st1" cx="43.1" cy="50.5" r="42"/>
+<path class="st2" d="M25.7,32c-2.6,5.6-4.1,11.9-4.1,18.5C21.5,74.5,41,94,65,94c24,0,43.5-19.5,43.5-43.5c0-6.6-1.5-12.9-4.1-18.5
+	H25.7z"/>
+<g>
+	<circle class="st3" cx="65" cy="50.5" r="43.5"/>
+	<path class="st3" d="M14,33h102.9"/>
+	<path class="st3" d="M14,69h102.9"/>
 </g>
 </svg>

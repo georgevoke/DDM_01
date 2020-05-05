@@ -3,17 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 120 100" style="enable-background:new 0 0 120 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.5;fill:#434B59;enable-background:new    ;}
+	.st0{opacity:0.3;fill:#434B59;enable-background:new    ;}
 	.st1{fill:#FFFFFF;fill-opacity:0;}
-	.st2{opacity:0.8;fill:#1F7EED;enable-background:new    ;}
-	.st3{fill:#3A404C;}
+	.st2{opacity:0.7;fill:#1F7EED;enable-background:new    ;}
+	.st3{fill:none;stroke:#3A404C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M78.3,76.4H1.8V23.6h76.5V76.4z"/>
+<path class="st0" d="M78.3,77.8H1.8V22.2h76.5V77.8z"/>
 <rect class="st1" width="120" height="100"/>
 <title>editing</title>
-<path class="st2" d="M111.5,21.5L71.2,61.7L31,21.5H111.5z"/>
-<path class="st3" d="M30.5,78.9c0,0.3,0.2,0.5,0.5,0.5h81.5c0.3,0,0.5-0.2,0.5-0.5l0,0V21.1c0-0.3-0.2-0.5-0.5-0.5H31
-	c-0.3,0-0.5,0.2-0.5,0.5V78.9z M110,76.4H33.5V23.6H110V76.4z"/>
-<path class="st3" d="M118.4,16.5l-1.4-1.4c-0.2-0.2-0.5-0.2-0.7,0L71.7,59.6L27.2,15.1c-0.2-0.2-0.5-0.2-0.7,0l-1.4,1.4
-	c-0.2,0.2-0.2,0.5,0,0.7l46.3,46.3c0.2,0.2,0.5,0.2,0.7,0l46.4-46.3C118.6,17,118.6,16.7,118.4,16.5z"/>
+<path class="st2" d="M110.9,21.5L71.2,61.1L31.6,21.5H110.9z"/>
+<path class="st3" d="M26.6,15.8L72,61.2l45.4-45.4"/>
+<rect x="32" y="22" class="st3" width="80" height="56"/>
 </svg>

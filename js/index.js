@@ -32,6 +32,102 @@ $(window).resize(function(){
 
 
 
+
+/****************************************************
+/* CAROUSEL
+/****************************************************/
+
+
+// $('.fade').slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 500,
+//   fade: true,
+//   cssEase: 'linear'
+// });
+
+
+$(document).ready(function(){
+  $('.description .carousel').slick({
+    dots: true,
+    // rtl: true,
+    // speed: 500,
+    // fade: true,
+    // cssEase: 'linear'
+  });
+});
+
+
+// PLACEHOLDER-1 *************************************************
+
+
+$('.placeholder-1').on('mouseover', function(e) {
+  // alert("I am an alert box!");
+  $('.p-a-1, .p-a-2, .p-a-3').addClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+$('.placeholder-1').on('mouseout', function(e) {
+  // alert("I am an alert box!");
+  $('.p-a-1, .p-a-2, .p-a-3').removeClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+
+// PLACEHOLDER-2 *************************************************
+
+
+$('.placeholder-2').on('mouseover', function(e) {
+  // alert("I am an alert box!");
+  $('.p-b-1, .p-b-2, .p-b-3').addClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+$('.placeholder-2').on('mouseout', function(e) {
+  // alert("I am an alert box!");
+  $('.p-b-1, .p-b-2, .p-b-3').removeClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+
+// PLACEHOLDER-3 *************************************************
+
+
+$('.placeholder-3').on('mouseover', function(e) {
+  // alert("I am an alert box!");
+  $('.p-c-1, .p-c-2, .p-c-3').addClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+$('.placeholder-3').on('mouseout', function(e) {
+  // alert("I am an alert box!");
+  $('.p-c-1, .p-c-2, .p-c-3').removeClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+
+// PLACEHOLDER-4 *************************************************
+
+
+$('.placeholder-4').on('mouseover', function(e) {
+  // alert("I am an alert box!");
+  $('.p-d-1, .p-d-2, .p-d-3').addClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+$('.placeholder-4').on('mouseout', function(e) {
+  // alert("I am an alert box!");
+  $('.p-d-1, .p-d-2, .p-d-3').removeClass('scale-up');
+  // $('.placeholder').css('transform', 'scale(1.2)');
+});
+
+
+
+
+
+
+
+
 /****************************************************
 /* GOOGLE MAPS
 /****************************************************/
@@ -92,7 +188,7 @@ var waypoint = new Waypoint({
     // Show main._home
     $('main').css('opacity', '1.0');
     $('main').css('z-index', '2');
-    $('main').css('transform', 'translateY(-3rem)');
+    $('main').css('transform', 'translateY(-10rem)');
     }
 
   }
