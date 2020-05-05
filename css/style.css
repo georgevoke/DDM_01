@@ -850,9 +850,9 @@ footer i {
 
 
 /* MEDIA QUERIES
-/********************  <- 640px  **********************/
+/********************  <- 500px  **********************/
 
-@media (max-height: 640px) {
+@media (max-height: 500px) {
 
 .scroll {
 	display: none;
