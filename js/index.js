@@ -3,6 +3,9 @@ $(document).ready(function() {
 
 
 
+
+
+
 /****************************************************
 /* BURGER
 /****************************************************/
@@ -58,23 +61,25 @@ $(document).ready(function(){
 });
 
 
-// PLACEHOLDER-1 *************************************************
+
+
+// PLACEHOLDER-1 *************************************
 
 
 $('.placeholder-1').on('mouseover', function(e) {
   // alert("I am an alert box!");
-  $('.p-a-1, .p-a-2, .p-a-3').addClass('scale-up');
+  $('.p-a-1, .p-a-2, .p-a-3, .p-a-4').addClass('scale-up');
   // $('.placeholder').css('transform', 'scale(1.2)');
 });
 
 $('.placeholder-1').on('mouseout', function(e) {
   // alert("I am an alert box!");
-  $('.p-a-1, .p-a-2, .p-a-3').removeClass('scale-up');
+  $('.p-a-1, .p-a-2, .p-a-3, .p-a-4').removeClass('scale-up');
   // $('.placeholder').css('transform', 'scale(1.2)');
 });
 
 
-// PLACEHOLDER-2 *************************************************
+// PLACEHOLDER-2 *************************************
 
 
 $('.placeholder-2').on('mouseover', function(e) {
@@ -90,7 +95,7 @@ $('.placeholder-2').on('mouseout', function(e) {
 });
 
 
-// PLACEHOLDER-3 *************************************************
+// PLACEHOLDER-3 *************************************
 
 
 $('.placeholder-3').on('mouseover', function(e) {
@@ -106,8 +111,7 @@ $('.placeholder-3').on('mouseout', function(e) {
 });
 
 
-// PLACEHOLDER-4 *************************************************
-
+// PLACEHOLDER-4 *************************************
 
 $('.placeholder-4').on('mouseover', function(e) {
   // alert("I am an alert box!");
@@ -120,6 +124,8 @@ $('.placeholder-4').on('mouseout', function(e) {
   $('.p-d-1, .p-d-2, .p-d-3').removeClass('scale-up');
   // $('.placeholder').css('transform', 'scale(1.2)');
 });
+
+
 
 
 
@@ -165,9 +171,175 @@ $('.js-section-scroll').on('click', function(e) {
 
   $('html, body').animate({
     scrollTop: $section.offset().top + 'px'
-  }, 500);
+  }, 600);
 });
 
+
+
+
+
+
+
+
+
+/****************************************************
+/* PLAY SHOWREEL
+/****************************************************/
+
+
+// function noscroll() {
+//   window.scrollTo( 0, 0 );
+// }
+
+$('#play-showreel').on('click', function(e) {
+  e.preventDefault();
+
+  // alert('Esc key pressed.');
+
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+  // window.addEventListener('scroll', noscroll);
+
+});
+
+$('#close').on('click', function(e) {
+  e.preventDefault();
+
+  $('div.video').fadeOut();
+  $('.video-showreel').fadeOut();
+
+  // window.removeEventListener('scroll', noscroll);
+
+});
+
+document.onkeydown = function(evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {
+
+     // alert('Esc key pressed.');
+
+      $('div.video').fadeOut();
+      $('.video-showreel').fadeOut();
+
+      // window.removeEventListener('scroll', noscroll);
+
+  }
+};
+
+
+
+
+/****************************************************
+/* PLAY PROMOTIONAL
+/****************************************************/
+
+
+// function noscroll() {
+//   window.scrollTo( 0, 0 );
+// }
+
+// $('#play-promotional').on('click', function(e) {
+//   e.preventDefault();
+//   $('div.video').fadeIn('slow');
+//   $('.video-promotional').fadeIn('slow');
+//   window.addEventListener('scroll', noscroll);
+// });
+
+// $('#close').on('click', function(e) {
+//   e.preventDefault();
+//   $('div.video').fadeOut();
+//   $('.video-promotional').fadeOut();
+//   window.removeEventListener('scroll', noscroll);
+// });
+
+
+/****************************************************
+/* PLAY CORPORATE
+/****************************************************/
+
+
+// function noscroll() {
+//   window.scrollTo( 0, 0 );
+// }
+
+// $('#play-corporate').on('click', function(e) {
+//   e.preventDefault();
+//   $('div.video').fadeIn('slow');
+//   $('.video-corporate').fadeIn('slow');
+//   window.addEventListener('scroll', noscroll);
+// });
+
+// $('#close').on('click', function(e) {
+//   e.preventDefault();
+//   $('div.video').fadeOut();
+//   $('.video-corporate').fadeOut();
+//   window.removeEventListener('scroll', noscroll);
+// });
+
+
+/****************************************************
+/* PLAY WEDDING
+/****************************************************/
+
+
+// function noscroll() {
+//   window.scrollTo( 0, 0 );
+// }
+
+// $('#play-wedding').on('click', function(e) {
+//   e.preventDefault();
+//   $('div.video').fadeIn('slow');
+//   $('.video-wedding').fadeIn('slow');
+//   window.addEventListener('scroll', noscroll);
+// });
+
+// $('#close').on('click', function(e) {
+//   e.preventDefault();
+//   $('div.video').fadeOut();
+//   $('.video-wedding').fadeOut();
+//   window.removeEventListener('scroll', noscroll);
+// });
+
+
+
+
+/****************************************************
+/* CLOSE SHOWREEL
+/****************************************************/
+
+// $('#close').on('click', function(e) {
+//   var $this = $(this);
+//   var $frame = $this.find('iframe');
+//   $frame.attr('src', $frame.attr('src'));
+// });
+
+// $('#close-home').on('click', function(e) {
+//   // alert("I am an alert box!");
+//   // $('frame').attr('src');
+//   var $frame = $('iframe');
+//   $frame.attr('src', $frame.attr('src'));
+// });
+
+
+// $('#close').on('click', function(e) {
+//   // alert("I am an alert box!");
+//   // $('frame').attr('src');
+//   var $this = $(this);
+//   var $frame = $this.find('iframe');
+
+//   $frame.attr('src', $frame.attr('src'));
+// });
+
+// $('#close').on('click', function(e) {
+//   // alert("I am an alert box!");
+//   // $('frame').attr('src');
+//   // var $frame = $('iframe');
+
+//   var $frame = $this.find('iframe');
+
+//   $frame.attr('src', $frame.attr('src'));
+// });
 
 
 
@@ -197,6 +369,7 @@ var waypoint = new Waypoint({
 
 
 
+
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint'),
   handler: function(direction) {
@@ -215,144 +388,6 @@ var waypoint = new Waypoint({
   }
 
 })
-
-
-
-
-/****************************************************
-/* PLAY SHOWREEL
-/****************************************************/
-
-
-function noscroll() {
-  window.scrollTo( 0, 0 );
-}
-
-$('#play-showreel').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeIn('slow');
-  $('.video-showreel').fadeIn('slow');
-  window.addEventListener('scroll', noscroll);
-});
-
-$('#close').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeOut();
-  $('.video-showreel').fadeOut();
-  window.removeEventListener('scroll', noscroll);
-});
-
-
-/****************************************************
-/* PLAY PROMOTIONAL
-/****************************************************/
-
-
-function noscroll() {
-  window.scrollTo( 0, 0 );
-}
-
-$('#play-promotional').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeIn('slow');
-  $('.video-promotional').fadeIn('slow');
-  window.addEventListener('scroll', noscroll);
-});
-
-$('#close').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeOut();
-  $('.video-promotional').fadeOut();
-  window.removeEventListener('scroll', noscroll);
-});
-
-
-/****************************************************
-/* PLAY CORPORATE
-/****************************************************/
-
-
-function noscroll() {
-  window.scrollTo( 0, 0 );
-}
-
-$('#play-corporate').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeIn('slow');
-  $('.video-corporate').fadeIn('slow');
-  window.addEventListener('scroll', noscroll);
-});
-
-$('#close').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeOut();
-  $('.video-corporate').fadeOut();
-  window.removeEventListener('scroll', noscroll);
-});
-
-
-/****************************************************
-/* PLAY WEDDING
-/****************************************************/
-
-
-function noscroll() {
-  window.scrollTo( 0, 0 );
-}
-
-$('#play-wedding').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeIn('slow');
-  $('.video-wedding').fadeIn('slow');
-  window.addEventListener('scroll', noscroll);
-});
-
-$('#close').on('click', function(e) {
-  e.preventDefault();
-  $('div.video').fadeOut();
-  $('.video-wedding').fadeOut();
-  window.removeEventListener('scroll', noscroll);
-});
-
-
-
-
-/****************************************************
-/* CLOSE SHOWREEL
-/****************************************************/
-
-// $('#close').on('click', function(e) {
-//   var $this = $(this);
-//   var $frame = $this.find('iframe');
-//   $frame.attr('src', $frame.attr('src'));
-// });
-
-$('#close').on('click', function(e) {
-  // alert("I am an alert box!");
-  // $('frame').attr('src');
-  var $frame = $('iframe');
-  $frame.attr('src', $frame.attr('src'));
-});
-
-
-// $('#close').on('click', function(e) {
-//   // alert("I am an alert box!");
-//   // $('frame').attr('src');
-//   var $this = $(this);
-//   var $frame = $this.find('iframe');
-
-//   $frame.attr('src', $frame.attr('src'));
-// });
-
-// $('#close').on('click', function(e) {
-//   // alert("I am an alert box!");
-//   // $('frame').attr('src');
-//   // var $frame = $('iframe');
-
-//   var $frame = $this.find('iframe');
-
-//   $frame.attr('src', $frame.attr('src'));
-// });
 
 
 

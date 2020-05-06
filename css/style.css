@@ -745,6 +745,70 @@ img.pictogram {
 
 
 
+/* VIDEO ******************/
+
+
+.video-showreel {
+	display: none;
+}
+
+.video {
+	display: none;
+	position: fixed;
+	/*padding: 1.5rem 2rem 4.5rem;*/
+	/*padding: 6rem;*/
+	width: 100vw;
+	height: 100vh;
+	/*margin: 0 auto;*/
+	z-index: 4;
+	/*background-color: rgba(0,6,15,0.9);*/
+	text-align: center;
+}
+
+.video i {
+	font-size: 1.25rem;
+	margin-left: 0.3rem;
+	transform: translateY(0.1rem);
+}
+
+.video-wrapper {
+	position: relative;
+	/*left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-60%);*/
+
+	/*height: 60vh;
+	max-height: 50rem;*/
+	
+	top: 50%;
+	left: 50%;
+
+	transform: translateX(-50%) translateY(-60%);
+
+	height: 0rem;
+	width: 50vw;
+	/*max-width: 120rem;*/
+	/*width: 60vw;*/
+	
+	padding-bottom: 28%;
+
+	z-index: 5;
+	
+	background-color: rgba(0,6,15,1.0);
+}
+
+.video iframe {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 0 4rem 22rem -10rem rgba(1,13,35,0.8);
+}
+
+
+
 /* FOOTER ******************/
 
 footer {
@@ -1606,10 +1670,44 @@ h5 {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	padding: 2.8rem 3.2rem 6.262%;
+	padding: 2.8rem 3.2rem 20rem;
 	border-radius: 0.5rem;
 	overflow: hidden; 
 }
+
+.placeholder-1 {
+	padding-bottom: 4.8705%;
+}
+
+.placeholder-2 {
+	padding-bottom: 6.262%;
+}
+
+.placeholder-3 {
+	padding-bottom: 8.7666%;
+}
+
+.placeholder-4 {
+	padding-bottom: 43.833%;
+}
+
+
+/*.one-item {
+	padding-bottom: 43.833%;
+}*/
+
+/*.two-items {
+	padding-bottom: 8.7666%;
+}*/
+
+/*.three-items {
+	padding-bottom: 6.262%;
+}*/
+
+/*.four-items {
+	padding-bottom: 4.8705%;
+}*/
+
 
 .inner-div {
 	position: absolute;
@@ -1619,6 +1717,7 @@ h5 {
      left: 0;
      overflow: hidden;
      transition: all 0.5s ease;
+     background-color: rgba(1,13,35,0.8);
 }
 
 .scale-up {
@@ -1630,16 +1729,23 @@ h5 {
 
 
 .p-a-1 {
-	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/real-fake.png") no-repeat center;
+	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/exeter-consortium.png") no-repeat center;
     background-size: cover
 }
 
 .p-a-2 {
-	
+	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/world-of-country-life.png") no-repeat center;
+    background-size: cover
 }
 
 .p-a-3 {
-	
+	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/christies-furniture.png") no-repeat center;
+    background-size: cover
+}
+
+.p-a-4 {
+	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/real-fake.png") no-repeat center;
+    background-size: cover
 }
 
 
@@ -1649,7 +1755,8 @@ h5 {
 }
 
 .p-b-2 {
-	
+	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/oysta-tech.png") no-repeat center;
+    background-size: cover
 }
 
 .p-b-3 {
@@ -1658,12 +1765,13 @@ h5 {
 
 
 .p-c-1 {
-	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/emma-stone.png") no-repeat center;
+	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/fern-stone.png") no-repeat center;
     background-size: cover
 }
 
 .p-c-2 {
-	
+	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/roast-beatz.png") no-repeat center;
+    background-size: cover
 }
 
 .p-c-3 {
