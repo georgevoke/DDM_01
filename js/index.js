@@ -3,9 +3,6 @@ $(document).ready(function() {
 
 
 
-
-
-
 /****************************************************
 /* BURGER
 /****************************************************/
@@ -35,19 +32,27 @@ $(window).resize(function(){
 
 
 
+/****************************************************
+/* ANCHOR SCROLL
+/****************************************************/
+
+
+$('.js-section-scroll').on('click', function(e) {
+  e.preventDefault();
+  var section = $(this).attr('href').substr($(this).attr('href').indexOf('#'));
+  var $section = $(section);
+
+  $('html, body').animate({
+    scrollTop: $section.offset().top + 'px'
+  }, 600);
+});
+
+
+
 
 /****************************************************
 /* CAROUSEL
 /****************************************************/
-
-
-// $('.fade').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 500,
-//   fade: true,
-//   cssEase: 'linear'
-// });
 
 
 $(document).ready(function(){
@@ -128,60 +133,6 @@ $('.placeholder-4').on('mouseout', function(e) {
 
 
 
-
-
-
-
-
-
-/****************************************************
-/* GOOGLE MAPS
-/****************************************************/
-
-
-// window.onload = function() {
-//     var myOptions = {
-//         center: new google.maps.LatLng(50.721802,-3.833620),
-//         zoom: 10.2,
-//         mapTypeId: google.maps.MapTypeId.ROADMAP,
-//         disableDefaultUI: false
-//     };
-
-//     var map = new google.maps.Map(document.getElementById("map"), myOptions);
-// }
-
-
-
-
-
-
-
-
-/****************************************************
-/* ANCHOR SCROLL
-/****************************************************/
-
-
-
-
-$('.js-section-scroll').on('click', function(e) {
-  e.preventDefault();
-  var section = $(this).attr('href').substr($(this).attr('href').indexOf('#'));
-  var $section = $(section);
-
-  $('html, body').animate({
-    scrollTop: $section.offset().top + 'px'
-  }, 600);
-});
-
-
-
-
-
-
-
-
-
 /****************************************************
 /* PLAY SHOWREEL
 /****************************************************/
@@ -194,8 +145,7 @@ $('.js-section-scroll').on('click', function(e) {
 $('#play-showreel').on('click', function(e) {
   e.preventDefault();
 
-  // alert('Esc key pressed.');
-
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/395199069");
   $('div.video').fadeIn('slow');
   $('.video-showreel').fadeIn('slow');
 
@@ -203,13 +153,172 @@ $('#play-showreel').on('click', function(e) {
 
 });
 
+
+/****************************************************
+/* PLAY PA1
+/****************************************************/
+
+
+$('#play-pa1').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/268972226");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PA2
+/****************************************************/
+
+
+$('#play-pa2').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/269039506");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PA3
+/****************************************************/
+
+
+$('#play-pa3').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/328811423");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PA4
+/****************************************************/
+
+
+$('#play-pa4').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/362760475");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PB1
+/****************************************************/
+
+
+$('#play-pb1').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/264773173");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PB2
+/****************************************************/
+
+
+$('#play-pb2').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/364802092");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PB3
+/****************************************************/
+
+
+$('#play-pb3').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/364802092");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PC1
+/****************************************************/
+
+
+$('#play-pc1').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/324993344");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PC2
+/****************************************************/
+
+
+$('#play-pc2').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/324994625");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+/****************************************************
+/* PLAY PD1
+/****************************************************/
+
+
+$('#play-pd1').on('click', function(e) {
+  e.preventDefault();
+
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/324993344");
+  $('div.video').fadeIn('slow');
+  $('.video-showreel').fadeIn('slow');
+
+});
+
+
+
+
+/****************************************************
+/* CLOSE VIDEOS
+/****************************************************/
+
+
 $('#close').on('click', function(e) {
   e.preventDefault();
 
   $('div.video').fadeOut();
-  $('.video-showreel').fadeOut();
+  $('iframe').fadeOut();
 
-  // window.removeEventListener('scroll', noscroll);
+  var $frame = $('iframe');
+  $frame.attr('src', $frame.attr('src'));
 
 });
 
@@ -217,129 +326,15 @@ document.onkeydown = function(evt) {
   evt = evt || window.event;
   if (evt.keyCode == 27) {
 
-     // alert('Esc key pressed.');
-
       $('div.video').fadeOut();
-      $('.video-showreel').fadeOut();
+      $('iframe').fadeOut();
 
-      // window.removeEventListener('scroll', noscroll);
+      var $frame = $('iframe');
+      $frame.attr('src', $frame.attr('src'));
 
   }
 };
 
-
-
-
-/****************************************************
-/* PLAY PROMOTIONAL
-/****************************************************/
-
-
-// function noscroll() {
-//   window.scrollTo( 0, 0 );
-// }
-
-// $('#play-promotional').on('click', function(e) {
-//   e.preventDefault();
-//   $('div.video').fadeIn('slow');
-//   $('.video-promotional').fadeIn('slow');
-//   window.addEventListener('scroll', noscroll);
-// });
-
-// $('#close').on('click', function(e) {
-//   e.preventDefault();
-//   $('div.video').fadeOut();
-//   $('.video-promotional').fadeOut();
-//   window.removeEventListener('scroll', noscroll);
-// });
-
-
-/****************************************************
-/* PLAY CORPORATE
-/****************************************************/
-
-
-// function noscroll() {
-//   window.scrollTo( 0, 0 );
-// }
-
-// $('#play-corporate').on('click', function(e) {
-//   e.preventDefault();
-//   $('div.video').fadeIn('slow');
-//   $('.video-corporate').fadeIn('slow');
-//   window.addEventListener('scroll', noscroll);
-// });
-
-// $('#close').on('click', function(e) {
-//   e.preventDefault();
-//   $('div.video').fadeOut();
-//   $('.video-corporate').fadeOut();
-//   window.removeEventListener('scroll', noscroll);
-// });
-
-
-/****************************************************
-/* PLAY WEDDING
-/****************************************************/
-
-
-// function noscroll() {
-//   window.scrollTo( 0, 0 );
-// }
-
-// $('#play-wedding').on('click', function(e) {
-//   e.preventDefault();
-//   $('div.video').fadeIn('slow');
-//   $('.video-wedding').fadeIn('slow');
-//   window.addEventListener('scroll', noscroll);
-// });
-
-// $('#close').on('click', function(e) {
-//   e.preventDefault();
-//   $('div.video').fadeOut();
-//   $('.video-wedding').fadeOut();
-//   window.removeEventListener('scroll', noscroll);
-// });
-
-
-
-
-/****************************************************
-/* CLOSE SHOWREEL
-/****************************************************/
-
-// $('#close').on('click', function(e) {
-//   var $this = $(this);
-//   var $frame = $this.find('iframe');
-//   $frame.attr('src', $frame.attr('src'));
-// });
-
-// $('#close-home').on('click', function(e) {
-//   // alert("I am an alert box!");
-//   // $('frame').attr('src');
-//   var $frame = $('iframe');
-//   $frame.attr('src', $frame.attr('src'));
-// });
-
-
-// $('#close').on('click', function(e) {
-//   // alert("I am an alert box!");
-//   // $('frame').attr('src');
-//   var $this = $(this);
-//   var $frame = $this.find('iframe');
-
-//   $frame.attr('src', $frame.attr('src'));
-// });
-
-// $('#close').on('click', function(e) {
-//   // alert("I am an alert box!");
-//   // $('frame').attr('src');
-//   // var $frame = $('iframe');
-
-//   var $frame = $this.find('iframe');
-
-//   $frame.attr('src', $frame.attr('src'));
-// });
 
 
 
@@ -368,8 +363,6 @@ var waypoint = new Waypoint({
 })
 
 
-
-
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint'),
   handler: function(direction) {
@@ -388,8 +381,6 @@ var waypoint = new Waypoint({
   }
 
 })
-
-
 
 
 
