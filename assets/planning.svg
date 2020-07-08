@@ -9,10 +9,10 @@
 	.st3{fill:none;stroke:#3A404C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <rect class="st0" width="120" height="100"/>
-<rect x="12" y="44" class="st1" width="58" height="44"/>
-<rect x="35.4" y="43.3" class="st2" width="69.6" height="45.9"/>
-<rect x="35" y="43" class="st3" width="70" height="46"/>
-<rect x="58" y="59" class="st3" width="24" height="13"/>
+<rect x="15.7" y="44" class="st1" width="67.3" height="44"/>
+<rect x="30" y="43.3" class="st2" width="69.6" height="45.9"/>
+<rect x="29.6" y="43" class="st3" width="70" height="46"/>
+<rect x="52.6" y="59" class="st3" width="24" height="13"/>
 <title>aerial</title>
-<rect x="30.5" y="18" transform="matrix(0.9366 -0.3504 0.3504 0.9366 -4.4559 24.4241)" class="st3" width="69.6" height="13.1"/>
+<rect x="25.1" y="18" transform="matrix(0.9366 -0.3504 0.3504 0.9366 -4.8007 22.5406)" class="st3" width="69.6" height="13.1"/>
 </svg>

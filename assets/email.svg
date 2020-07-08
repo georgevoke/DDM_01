@@ -8,10 +8,10 @@
 	.st2{opacity:0.7;fill:#1F7EED;enable-background:new    ;}
 	.st3{fill:none;stroke:#3A404C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M78.3,77.8H1.8V22.2h76.5V77.8z"/>
+<path class="st0" d="M83.3,77.8H6.8V22.2h76.5V77.8z"/>
 <rect class="st1" width="120" height="100"/>
 <title>editing</title>
-<path class="st2" d="M110.9,21.5L71.2,61.1L31.6,21.5H110.9z"/>
-<path class="st3" d="M26.6,15.8L72,61.2l45.4-45.4"/>
-<rect x="32" y="22" class="st3" width="80" height="56"/>
+<path class="st2" d="M105.9,21.5L66.2,61.1L26.6,21.5H105.9z"/>
+<path class="st3" d="M21.6,15.8L67,61.2l45.4-45.4"/>
+<rect x="27" y="22" class="st3" width="80" height="56"/>
 </svg>

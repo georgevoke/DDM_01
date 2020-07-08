@@ -145,7 +145,7 @@ $('.placeholder-4').on('mouseout', function(e) {
 $('#play-showreel').on('click', function(e) {
   e.preventDefault();
 
-  $('.video-showreel').attr("src","https://player.vimeo.com/video/395199069");
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/413177773");
   $('div.video').fadeIn('slow');
   $('.video-showreel').fadeIn('slow');
 
@@ -297,7 +297,7 @@ $('#play-pc2').on('click', function(e) {
 $('#play-pd1').on('click', function(e) {
   e.preventDefault();
 
-  $('.video-showreel').attr("src","https://player.vimeo.com/video/324993344");
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/395205173");
   $('div.video').fadeIn('slow');
   $('.video-showreel').fadeIn('slow');
 
@@ -338,6 +338,49 @@ document.onkeydown = function(evt) {
 
 
 
+
+
+
+
+/****************************************************
+/* COPY EMAIL TO CLIPBOARD
+/****************************************************/
+
+
+// // Set value for 'generated' CSS
+// var textBox = document.getElementById('emailCopy');
+
+// // Define copy anchor
+// var aButton = document.getElementById('copyEmail');
+
+//     // On click copy anchor
+//     aButton.addEventListener('click', function (event) {
+        
+//         // Prevent default anchor behaviour
+//         event.preventDefault();
+        
+//         // Select 'generated' CSS box (it's contents)
+//         textBox.select();
+        
+//         // Copy the content to clipboard
+//         document.execCommand('copy');
+
+//         // Give user feedback that content has been copied
+//         $('#copyEmail').addClass('active');
+
+//         //
+//         setTimeout(function(){
+//             $('.active').removeClass('active');
+//         },1800);
+        
+//     });
+
+
+
+
+
+
+
 /****************************************************
 /* WAYPOINT
 /****************************************************/
@@ -352,6 +395,8 @@ var waypoint = new Waypoint({
     if (direction === 'down') {
     // Do stuff
 
+    // alert("I am an alert box!");
+
     // Show main._home
     $('main').css('opacity', '1.0');
     $('main').css('z-index', '2');
@@ -360,7 +405,7 @@ var waypoint = new Waypoint({
 
   }
 
-})
+});
 
 
 var waypoint = new Waypoint({
@@ -380,7 +425,15 @@ var waypoint = new Waypoint({
 
   }
 
-})
+
+});
+
+
+
+
+
+
+
 
 
 
