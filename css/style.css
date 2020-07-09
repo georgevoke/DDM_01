@@ -474,9 +474,9 @@ li a {
 .hero::after {
   display: block;
   position: absolute;
-  background-image: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2)));
-  background-image: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2));
+  background-image: -o-linear-gradient(rgba(1,13,35,0.6), rgba(1,13,35,0.2));
+  background-image: -webkit-linear-gradient(rgba(1,13,35,0.6), rgba(1,13,35,0.2));
+  background-image: linear-gradient(rgba(1,13,35,0.6), rgba(1,13,35,0.2));
   height: 100%;
   width: 100%;
   content: '';
@@ -529,9 +529,9 @@ video {
 
 
 .services_title {
-	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/planning-lr.jpg") no-repeat fixed top;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/planning-lr.jpg") no-repeat fixed top;
-	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/planning-lr.jpg") no-repeat fixed top;
+	background: -o-linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,0.0)), url("../assets/planning-lr.jpg") no-repeat fixed top;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,0.0)), url("../assets/planning-lr.jpg") no-repeat fixed top;
+	background: linear-gradient(rgba(1,13,35,0.1), rgba(1,13,35,0.0)), url("../assets/planning-lr.jpg") no-repeat fixed top;
     background-size: cover;
 }
 
@@ -546,9 +546,9 @@ video {
 /* WORK ******************/
 
 .work_title {
-	background: -o-linear-gradient(rgba(1,13,35,0.6), rgba(1,13,35,0.2)), url("../assets/work-hr.png") no-repeat fixed top;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.6)), to(rgba(1,13,35,0.2))), url("../assets/work-hr.png") no-repeat fixed top;
-	background: linear-gradient(rgba(1,13,35,0.6), rgba(1,13,35,0.2)), url("../assets/work-hr.png") no-repeat fixed top;
+	background: -o-linear-gradient(rgba(1,13,35,0.3), rgba(1,13,35,0.0)), url("../assets/work-hr.png") no-repeat fixed top;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.3), rgba(1,13,35,0.0)), url("../assets/work-hr.png") no-repeat fixed top;
+	background: linear-gradient(rgba(1,13,35,0.3), rgba(1,13,35,0.0)), url("../assets/work-hr.png") no-repeat fixed top;
     background-size: cover;
 }
 
@@ -597,7 +597,7 @@ header.dark_header {
 	/*background: url("../assets/map.svg") no-repeat top;*/
 	background-color: #AADAFF;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 /*.stripe {
@@ -754,7 +754,7 @@ img.pictogram {
 	/*padding: 0 2rem;*/
 	/*background-color: #E4E8EA;*/
 	background: -o-linear-gradient(rgba(224,227,233,0.3), rgba(224,227,233,1.0));
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(224,227,233,0.3)), to(rgba(224,227,233,1.0)));
+	background: -webkit-linear-gradient(rgba(224,227,233,0.3), rgba(224,227,233,1.0));
 	background: linear-gradient(rgba(224,227,233,0.3), rgba(224,227,233,1.0));
 	border-radius: 0.3rem;
 }
@@ -897,28 +897,28 @@ img.pictogram {
 
 .p-a-1 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/exeter-consortium.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/exeter-consortium.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/exeter-consortium.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/exeter-consortium.png") no-repeat center;
     background-size: cover
 }
 
 .p-a-2 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/world-of-country-life.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/world-of-country-life.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/world-of-country-life.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/world-of-country-life.png") no-repeat center;
     background-size: cover
 }
 
 .p-a-3 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/christies-furniture.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/christies-furniture.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/christies-furniture.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/christies-furniture.png") no-repeat center;
     background-size: cover
 }
 
 .p-a-4 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/real-fake.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/real-fake.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/real-fake.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/real-fake.png") no-repeat center;
     background-size: cover
 }
@@ -926,7 +926,7 @@ img.pictogram {
 
 .p-b-1 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/hmrc-enquiries.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/hmrc-enquiries.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/hmrc-enquiries.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/hmrc-enquiries.png") no-repeat center;
     background-size: cover
 }
@@ -945,14 +945,14 @@ img.pictogram {
 
 .p-c-1 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/fern-stone.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/fern-stone.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/fern-stone.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/fern-stone.png") no-repeat center;
     background-size: cover
 }
 
 .p-c-2 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/roast-beatz.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/roast-beatz.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/roast-beatz.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/roast-beatz.png") no-repeat center;
     background-size: cover
 }
@@ -964,7 +964,7 @@ img.pictogram {
 
 .p-d-1 {
 	background: -o-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/wedding.png") no-repeat center;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,13,35,0.7)), to(rgba(1,13,35,0.2))), url("../assets/placeholders/wedding.png") no-repeat center;
+	background: -webkit-linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/wedding.png") no-repeat center;
 	background: linear-gradient(rgba(1,13,35,0.7), rgba(1,13,35,0.2)), url("../assets/placeholders/wedding.png") no-repeat center;
     background-size: cover
 }
