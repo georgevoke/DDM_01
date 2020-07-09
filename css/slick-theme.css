@@ -25,12 +25,16 @@
     position: absolute;
     top: 50%;
 
+    z-index: 1;
+
     display: block;
 
     height: 6rem;
     width: 6rem;
 
     padding: 0;
+
+
 
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -84,7 +88,7 @@
 }
 
 .slick-prev {
-    left: -9rem;
+    left: -2.5rem;
     width: 5rem;
     height: 5rem;
 }
@@ -104,7 +108,7 @@
 }
 
 .slick-next {
-    right: -9rem;
+    right: -2.5rem;
     width: 5rem;
     height: 5rem;
 }
@@ -209,4 +213,26 @@
     font-size: 3rem;
     opacity: 1.0;
     color: #1F7EED;
+}
+
+
+
+
+/******************************************************************************************************************************
+/* MEDIA QUERIES
+/*************************************************************  768px ->  ***********************************************/
+
+
+@media (min-width: 768px) {
+
+
+.slick-prev {
+    left: -9rem;
+}
+
+.slick-next {
+    right: -9rem;
+}
+
+
 }
