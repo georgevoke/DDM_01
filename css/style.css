@@ -711,6 +711,7 @@ section.service, section.work-type {
 }*/
 
 .work-type .description {
+	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
 
@@ -1915,8 +1916,11 @@ footer p:last-child {
 	width: 40%;
 	/*float: right;*/
 	text-align: right;
-	margin: 0 0 -0.1rem;
-	
+	margin: 0 0 -0.1rem;	
+}
+
+.work-type .description {
+	padding-top: 0rem;
 }
 
 
