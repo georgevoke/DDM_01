@@ -42,7 +42,7 @@
     cursor: pointer;
 
     border-radius: 50%;
-    border: 0.3rem solid #BCD6F4;
+    border: 0.2rem solid #F1F3F8;
 
     background: #1F7EED;
 }
@@ -56,20 +56,14 @@
 
 }*/
 
-.slick-prev:hover, .slick-next:hover {
-    /*color: transparent;*/
-    background: #1068CC;
-    /*outline: none;*/
-}
+
 
 .slick-prev:focus, .slick-next:focus {
     outline: none;
 }
 
 
-.slick-prev:hover:before, .slick-next:hover:before {
-    opacity: 1;
-}
+
 
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
     opacity: .25;
@@ -80,7 +74,7 @@
     top: -0.2rem;   
     font-family: 'Acme', sans-serif;
     color: #010D23; 
-    font-size:3.2rem;
+    font-size: 2.8rem;
 
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -88,9 +82,9 @@
 }
 
 .slick-prev {
-    left: -2.75rem;
-    width: 5rem;
-    height: 5rem;
+    left: -1.8rem;
+    width: 3.8rem;
+    height: 3.8rem;
 }
 
 [dir='rtl'] .slick-prev {
@@ -108,9 +102,9 @@
 }
 
 .slick-next {
-    right: -2.75rem;
-    width: 5rem;
-    height: 5rem;
+    right: -1.8rem;
+    width: 3.8rem;
+    height: 3.8rem;
 }
 
 [dir='rtl'] .slick-next {
@@ -129,7 +123,11 @@
 
 /* Dots */
 .slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    margin-bottom: 4rem;
+}
+
+ul.slick-dots {
+    opacity: 1.0;
 }
 
 .slick-dots {
@@ -178,11 +176,11 @@
     background: transparent;
 }
 
-.slick-dots li button:hover, .slick-dots li button:focus {
+.slick-dots li button:focus {
     outline: none;
 }
 
-.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+.slick-dots li button:focus:before {
     color: #010D23;
     opacity: 1;
 }
@@ -225,13 +223,54 @@
 
 @media (min-width: 768px) {
 
+.slick-dotted.slick-slider {
+    margin-bottom: 3rem;
+}
 
 .slick-prev {
     left: -9rem;
+    width: 5rem;
+    height: 5rem;
 }
-
 .slick-next {
     right: -9rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.slick-prev, .slick-next {
+    border: 0.3rem solid #BCD6F4;
+}
+
+
+}
+
+
+
+/******************************************************************************************************************************
+/* MEDIA QUERIES
+/*************************************************************  1024px ->  **********************************************/
+
+
+@media (min-width: 1024px) {
+
+.slick-prev:hover, .slick-next:hover {
+    /*color: transparent;*/
+    background: #1068CC;
+    /*outline: none;*/
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+    opacity: 1;
+}
+
+.slick-dots li button:hover {
+    outline: none;
+}
+
+.slick-dots li button:hover:before {
+    color: #010D23;
+    opacity: 1;
 }
 
 

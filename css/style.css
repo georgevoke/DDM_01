@@ -72,6 +72,11 @@ a {
 	color: #fff;
 }
 
+a[href^=tel] {
+   text-decoration:inherit;
+   color: inherit;
+}
+
 .container-1 {
 	width: 95%;
 	max-width: 136rem;
@@ -207,6 +212,7 @@ p.more {
 
 p.point {
 	font-size: 1.5rem;
+	line-height: 1.3;
 	font-weight: 300;
 	color: #fff;
 	padding-bottom: 1rem;
@@ -283,7 +289,7 @@ a.selected {
 a.selected:before {
 	content: '';
 	position: absolute;
-	top: 2.2rem;
+	top: 5.2rem;
 	left: 0;
 	width: 100%;
 	height: 0.2rem;
@@ -293,6 +299,7 @@ a.selected:before {
 li a {
 	position: relative;
 	color: rgba(255,255,255,0.85);
+	padding: 3rem 0;
 	overflow: hidden;
 	-webkit-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
@@ -611,6 +618,11 @@ header.dark_header {
 	z-index: -1
 }*/
 
+/*.titles {
+	position: relative;
+	z-index: -1;
+}*/
+
 .content-top {
 	position: relative;
 	z-index: 1;
@@ -752,6 +764,7 @@ img.pictogram {
 	overflow: hidden;
 	margin-bottom: 2rem;
 	width: 100%;
+
 	/*padding: 0 2rem;*/
 	/*background-color: #E4E8EA;*/
 	background: -o-linear-gradient(rgba(224,227,233,0.3), rgba(224,227,233,1.0));
@@ -765,16 +778,21 @@ img.pictogram {
 	text-align: left;
 }
 
+.work .thumb a {
+	display: block;
+}
+
 .badge {
 	position: relative;
+	width: 100%;
 	padding: 2.2rem 1.8rem 1.2rem;
 	background-color: /*#04132F*/rgba(4,19,47,0.94);
 	-webkit-box-shadow: 0px 0px 0px 0.6rem rgba(4,19,47,0.4);
 	        box-shadow: 0px 0px 0px 0.6rem rgba(4,19,47,0.4);
-	/*border-top: 1rem solid rgba(4,19,47,0.95);*/
+
 }
 
-.arrow-link i {
+.arrow-link {
 	color: #489CFF;
 	position: absolute;
 	padding: 3.1rem;	
@@ -816,7 +834,7 @@ img.pictogram {
 		-ms-transform: translateX(-50%);
 	    transform: translateX(-50%);
 
-	width: 90%;
+	width: 100%;
 
 	background-color: #010D23;
 	border-radius: 0.4rem;
@@ -826,7 +844,8 @@ img.pictogram {
 
 .project {
 	position: relative;
-	font-size: 2.6rem;
+	font-size: 2rem;
+	line-height: 1.25;
 	font-weight: 300;
 	z-index: 1;
 }
@@ -845,7 +864,7 @@ img.pictogram {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	padding: 2.8rem 3.2rem 20rem;
+	padding: 2rem 2rem 0rem;
 	border-radius: 0.5rem;
 	overflow: hidden; 
 }
@@ -1133,11 +1152,6 @@ footer p, footer p a {
 	transition: color 0.3s;
 }
 
-footer p a:hover {
-	text-decoration: underline;
-	color: rgba(255,255,255,1.0);
-}
-
 footer i {
 	margin-right: 0.4rem;
 	color: #1F7EED;
@@ -1216,10 +1230,6 @@ footer i {
 	transition: opacity 0.2s;
 }
 
-.button-scroll a:hover {
-	background-color: #1068CC;
-}
-
 
 /* MEDIA QUERIES TEST
 /********************  <- 500px  **********************/
@@ -1266,7 +1276,7 @@ footer i {
 	font-size: 1rem;
 	padding: 4rem;
 	color: #fff;
-	background-color: /*rgba(0, 0, 0, 0.15)*/ /*rgba(4, 19, 47, 0.3)*/ rgba(31, 126, 237, 0.2);
+	background-color: /*rgba(31, 126, 237, 0.2)*/ rgba(4, 19, 47, 0.4);
 	border-radius: 50%;
 	-webkit-transition: opacity 0.2s;
 	-o-transition: opacity 0.2s;
@@ -1276,6 +1286,10 @@ footer i {
 a.copy-l {
 	display: none;
 }
+
+/*a.copy-l:hover {
+	cursor: text;
+}*/
 
 .hero i {
 	font-size: 1.5rem;
@@ -1288,10 +1302,9 @@ a.copy-l {
 	    transform: translateX(0.15rem);
 }
 
-.play-showreel a:hover {
+/*.play-showreel a:hover {
 	background-color: rgba(4, 19, 47, 0.4);
-	/*color: #1068CC;*/
-}
+}*/
 
 .play-showreel div {
 	font-size: 1.6rem;
@@ -1314,7 +1327,7 @@ a.copy-l {
 	position: absolute;
 	text-align: center;
 	left: 50%;
-	top: 34%;
+	top: 37%;
 	z-index: 100;
 	-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
@@ -1339,9 +1352,9 @@ a.copy-l {
 .button-action-play a {
 	display: inline-block;
 	font-size: 1rem;
-	padding: 4rem;
+	padding: 3rem;
 	color: #fff;
-	background-color: /*rgba(0, 0, 0, 0.15)*/ /*rgba(4, 19, 47, 0.3)*/ rgba(31, 126, 237, 0.2);
+	background-color: rgba(4, 19, 47, 0.4);
 	border-radius: 50%;
 	-webkit-transition: opacity 0.2s;
 	-o-transition: opacity 0.2s;
@@ -1349,7 +1362,7 @@ a.copy-l {
 }
 
 .carousel i {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	margin-left: 0.136rem;
 }
 
@@ -1359,10 +1372,7 @@ a.copy-l {
 	    transform: translateX(0.15rem);
 }
 
-.play-carousel a:hover {
-	background-color: rgba(4, 19, 47, 0.4);
-	/*color: #1068CC;*/
-}
+
 
 
 
@@ -1396,9 +1406,6 @@ a.copy-l {
 	transition: all 0.2s;
 }
 
-.button-action-large a:hover {
-	background-color: #1068CC;
-}
 
 
 /******************************************************************************************************************************
@@ -1525,9 +1532,12 @@ p.more {
 }
 
 p.point {
-	font-size: 1.7rem;
+	/*font-size: 1.7rem;*/
 	font-weight: 300;
 	padding-bottom: 1rem;
+	/*white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;*/
 }
 
 p.label {
@@ -1588,7 +1598,7 @@ li {
 li a:before {
 	content: '';
 	position: absolute;
-	top: 2.2rem;
+	top: 5.2rem;
 	left: 0;
 	width: 0;
 	height: 0.2rem;
@@ -1596,17 +1606,6 @@ li a:before {
 	-webkit-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
-}
-
-li a:hover:before {
-	width: 100%;
-	-webkit-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
-}
-
-li a:hover {
-	color: rgba(255,255,255,1.0);
 }
 
 .primary {
@@ -1763,10 +1762,6 @@ li a:hover {
 }
 
 
-.button-action-small a:hover {
-	background-color: #1068CC;
-}
-
 .play-showreel i {
 	font-size: 1rem;
 	margin-left: 0.2rem;
@@ -1780,10 +1775,6 @@ a.copy-l {
 	border-top-right-radius: 0rem;
 	border-bottom-right-radius: 0rem;
 	margin-right: 0rem;
-}
-
-a.copy-l:hover {
-	background-color: #1F7EED;
 }
 
 a.copy-r {
@@ -1843,10 +1834,26 @@ a.copy-r {
 	transition: all 0.2s;
 }
 
-.button-action-large a:hover {
-	background-color: #1068CC;
+
+
+
+/* BUTTON - ACTION - PLAY
+/******************************************************/
+
+
+.play-carousel {
+	top: 34%;
+
 }
 
+
+.button-action-play a {
+	padding: 4rem;
+}
+
+.carousel i {
+	font-size: 1.5rem;
+}
 
 
 
@@ -2050,9 +2057,31 @@ h5 {
 
 
 .carousel {
-
 	width: 70%;
+}
 
+.project {
+	font-size: 2.6rem;
+}
+
+.placeholder-1, .placeholder-2, .placeholder-3, .placeholder-4 {
+	padding: 2.8rem 3.2rem 20rem;
+}
+
+.placeholder-1 {
+	padding-bottom: 4.8705%;
+}
+
+.placeholder-2 {
+	padding-bottom: 6.262%;
+}
+
+.placeholder-3 {
+	padding-bottom: 8.7666%;
+}
+
+.placeholder-4 {
+	padding-bottom: 43.833%;
 }
 
 
@@ -2198,18 +2227,78 @@ button .slick-arrow {
 
 /******************************************************************************************************************************
 /* MEDIA QUERIES
-/*************************************************************  900px -> 1360px  **********************************************/
+/*************************************************************  900px ->  **********************************************/
 
 
 @media (min-width: 900px) {
 
-/*.container-2 {
-    width: 90%;
-    max-width: 72rem;
-    margin: 0 auto;
-}*/
+p.point {
+	font-size: 1.7rem;
 
 }
+
+
+/******************************************************************************************************************************
+/* MEDIA QUERIES
+/*************************************************************  1024px ->  **********************************************/
+
+
+/* HOVER STATES
+/******************************************************/
+
+@media (min-width: 1024px) {
+
+
+li a:hover:before {
+	width: 100%;
+	-webkit-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+li a:hover {
+	color: rgba(255,255,255,1.0);
+}
+
+.button-action-small a:hover {
+	background-color: #1068CC;
+}
+
+.button-action-large a:hover {
+	background-color: #1068CC;
+}
+
+.button-scroll a:hover {
+	background-color: #1068CC;
+}
+
+a.copy-l:hover {
+	background-color: #1F7EED;
+}
+
+footer p a:hover {
+	text-decoration: underline;
+	color: rgba(255,255,255,1.0);
+}
+
+.button-action-play a {
+	background-color: rgba(31, 126, 237, 0.2);
+}
+
+.play-carousel a:hover {
+	background-color: rgba(4, 19, 47, 0.4);
+	/*color: #1068CC;*/
+}
+ 
+
+}
+
+
+
+
+
+
+
 
 
 
