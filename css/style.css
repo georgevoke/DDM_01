@@ -248,7 +248,7 @@ header {
 
 
 nav {
-	padding: 4rem 1rem 2.5rem 0;
+	padding: 4rem 1rem 4rem 0;
 	width: 100%;
 }
 
@@ -342,12 +342,19 @@ li a {
         transition-timing-function: cubic-bezier(0.105, 0.615, 0.230, 0.990); /* custom */
 }
 
+.menu-wrapper {
+	position: relative;
+	top: -1rem;
+	/*right: -2rem;*/
+	padding: 1rem;
+}
+
 .menu-toggle {
 	direction: rtl;
 	display: block; 
 	position: relative;
 	z-index: 1;
-	margin-top: 0.2rem;
+	margin-top: 0.4rem;
 	-moz-user-select: none;
 	 -ms-user-select: none;
 	     user-select: none;
@@ -356,14 +363,16 @@ li a {
 
 .menu-toggle input {
 	display: block;
-	width: 3.3333333333333335rem;
-	height: 2.6666666666666665rem;
+	width: 5.3333333333333335rem;
+	height: 4.6666666666666665rem;
 	position: absolute;
 	top: -0.5833333333333334rem;
 	right: -0.4166666666666667rem;
 	cursor: pointer;
 	opacity: 0;
 	z-index: 2;
+
+	/*padding: 2rem;*/
 	
 	-webkit-touch-callout: none;
 }
@@ -439,6 +448,8 @@ li a {
 	    -ms-transform: rotate(45deg) translate(-1.2rem, -1.5rem);
 	        transform: rotate(45deg) translate(-1.2rem, -1.5rem);
 }
+
+
 
 
 
@@ -1592,7 +1603,7 @@ li {
 	/*font-size: 1rem;*/
 	display: inline-block;
 	margin-left: 2.2rem;
-	margin-bottom: 5.4rem;
+	margin-bottom: 4.4rem;
 }
 
 li a:before {
