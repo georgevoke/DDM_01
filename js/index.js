@@ -49,6 +49,18 @@ $('.js-section-scroll').on('click', function(e) {
 
 
 
+/****************************************************
+/* EMAIL
+/****************************************************/
+
+
+$('a.mail').on('click', function(){
+    var href = $(this).attr('href');
+    $(this).attr('href', href.replace('dragontree5928@gmail.com', 'gareth@dragontree.co.uk'));
+});
+
+
+
 
 /****************************************************
 /* CAROUSEL
