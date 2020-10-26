@@ -157,7 +157,7 @@ $('.placeholder-4').on('mouseout', function(e) {
 $('#play-showreel').on('click', function(e) {
   e.preventDefault();
 
-  $('.video-showreel').attr("src","https://player.vimeo.com/video/413177773");
+  $('.video-showreel').attr("src","https://player.vimeo.com/video/470248606");
   $('div.video').fadeIn('slow');
   $('.video-showreel').fadeIn('slow');
 
